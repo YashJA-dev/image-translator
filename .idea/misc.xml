@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/drawable/bottom_sheet_background.xml" value="0.2203125" />
         <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/layout/camera_main.xml" value="0.20416666666666666" />
       </map>

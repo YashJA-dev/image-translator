@@ -1,25 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <androidx.camera.view.PreviewView
-        android:id="@+id/camera_view"
+    android:id="@+id/sheetparent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="550dp"
 
-    </androidx.camera.view.PreviewView>
+        android:background="@drawable/bottom_sheet_background"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.09"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center|top"
+                android:src="@drawable/ic_baseline_remove_24"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_weight="0.8"
+                android:layout_height="0dp"
+                android:layout_width="match_parent">
+                <androidx.camera.view.PreviewView
+                    android:id="@+id/camera_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
 
-    <Button
-        android:id="@+id/capture_img_btn"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="68dp"
-        android:background="@drawable/capture_vector"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.camera.view.PreviewView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <Button
+                    android:id="@+id/capture_img_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="68dp"
+                    android:background="@drawable/capture_vector"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+</LinearLayout>
