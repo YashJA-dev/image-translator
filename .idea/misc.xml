@@ -4,8 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/drawable/bottom_sheet_background.xml" value="0.2203125" />
-        <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/layout/camera_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/drawable/capture_vector.xml" value="0.2203125" />
+        <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/drawable/ic_baseline_camera_alt_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/drawable/ic_baseline_remove_24.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/drawable/ic_baseline_scanner_24.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/layout/activity_tabbed.xml" value="0.19021739130434784" />
+        <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/layout/bottum_sheet_translator.xml" value="0.17255434782608695" />
+        <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/layout/bottumsheet_translator.xml" value="0.2793914246196404" />
+        <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/layout/camera_main.xml" value="0.18" />
+        <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/layout/fragment_dashboard.xml" value="0.19021739130434784" />
+        <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/layout/fragment_scanner_.xml" value="0.22" />
+        <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/layout/fragment_second.xml" value="0.19021739130434784" />
+        <entry key="..\:/Users/sai/AndroidStudioProjects/ImageTranslater/app/src/main/res/layout/fragment_translator.xml" value="0.18614130434782608" />
       </map>
     </option>
   </component>

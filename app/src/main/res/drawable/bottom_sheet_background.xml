@@ -3,5 +3,5 @@
     <corners
         android:topLeftRadius="30dp"
         android:topRightRadius="30dp"/>
-    <solid android:color="#BC05DC"/>
+    <solid android:color="@color/mai_layout_color"/>
 </shape>
