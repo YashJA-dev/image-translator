@@ -8,6 +8,8 @@ import androidx.viewpager.widget.ViewPager;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
 
 import com.example.imagetranslater.Essists.FragmentsData;
 import com.google.android.material.tabs.TabLayout;
@@ -29,8 +31,13 @@ public class Tabbed_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_tabbed);
         tablayout = activity.findViewById(R.id.tabb_layout);
         viewPager = activity.findViewById(R.id.viewPagger);
-        setUpTabLayout();
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        setUpTabLayout();
     }
 
     private void setUpTabLayout() {
@@ -40,6 +47,13 @@ public class Tabbed_Activity extends AppCompatActivity {
         adpater.addFragments(fragList);
         viewPager.setAdapter(adpater);
         setTitlesOfTab(tablayout);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("finish","f");
+        finish();
     }
 
     private List<FragmentsData> getFagList() {
@@ -61,5 +75,11 @@ public class Tabbed_Activity extends AppCompatActivity {
         tab = tabLayout.getTabAt(1);
         tab.setIcon(R.drawable.ic_baseline_g_translate_24);
         tab.setText("Translator");
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
     }
 }

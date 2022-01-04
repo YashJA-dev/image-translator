@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.io.File;
 
@@ -40,7 +41,7 @@ public class Scanner_F extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-
+        Toast.makeText(context,"resume scanner",Toast.LENGTH_SHORT);
         Camerasetup camerasetup=new Camerasetup(context,activity,viewPager,fragmentManager);
         camerasetup.initCamera();
 

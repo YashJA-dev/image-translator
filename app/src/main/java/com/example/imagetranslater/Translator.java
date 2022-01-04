@@ -168,4 +168,5 @@ public class Translator extends Fragment {
         super.onPause();
         Picasso.get().load(R.drawable.img_to_jpg).into(imgTranslation);
     }
+
 }

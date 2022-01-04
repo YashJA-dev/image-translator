@@ -48,6 +48,7 @@ public class Camerasetup {
     private BottomSheetBehavior sheetBehavior;
     private BottomSheetDialog sheet;
     private ViewPager viewPager;
+    private ListenableFuture<ProcessCameraProvider> futureCameraProvider;
     private  FragmentManager supportFragmentManager;
     Camerasetup(Context context, Activity activity, BottomSheetBehavior sheetBehavior) {
         this.context = context;
@@ -96,7 +97,7 @@ public class Camerasetup {
     }
 
     private void startCamera() {
-        ListenableFuture<ProcessCameraProvider> futureCameraProvider = ProcessCameraProvider.getInstance(context);
+   futureCameraProvider = ProcessCameraProvider.getInstance(context);
         futureCameraProvider.addListener(new Runnable() {
             @Override
             public void run() {
