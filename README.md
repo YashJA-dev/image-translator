@@ -4,7 +4,7 @@ Mobile Application which allows user to click image
 and then helps to extract text from that image 
 and then extracted text is converted to different Language
 
-# Features
+# Libraries used
 
 Worked With Firebase ML Kit API's and CameraX 
 (Androids JetPack Library)
